@@ -9,6 +9,8 @@ return new class() extends Migration {
     {
         Schema::create('fuels', static function (Blueprint $table) {
             $table->id();
+            $table->string('fuel');
+            $table->string('description');
             $table->timestamps();
         });
     }

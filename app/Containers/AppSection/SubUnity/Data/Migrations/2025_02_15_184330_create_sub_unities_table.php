@@ -9,6 +9,8 @@ return new class() extends Migration {
     {
         Schema::create('sub_unities', static function (Blueprint $table) {
             $table->id();
+            $table->string('sub_unity');
+            $table->string('description');
             $table->timestamps();
         });
     }

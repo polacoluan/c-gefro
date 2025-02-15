@@ -9,6 +9,8 @@ return new class() extends Migration {
     {
         Schema::create('companies', static function (Blueprint $table) {
             $table->id();
+            $table->string('company');
+            $table->string('description');
             $table->timestamps();
         });
     }

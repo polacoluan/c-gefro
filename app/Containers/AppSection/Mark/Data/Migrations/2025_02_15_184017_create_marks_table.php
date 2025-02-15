@@ -9,6 +9,8 @@ return new class() extends Migration {
     {
         Schema::create('marks', static function (Blueprint $table) {
             $table->id();
+            $table->string('mark');
+            $table->string('description');
             $table->timestamps();
         });
     }

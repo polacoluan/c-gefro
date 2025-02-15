@@ -9,6 +9,8 @@ return new class() extends Migration {
     {
         Schema::create('fleets', static function (Blueprint $table) {
             $table->id();
+            $table->string('fleet');
+            $table->string('description');
             $table->timestamps();
         });
     }

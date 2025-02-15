@@ -9,6 +9,8 @@ return new class() extends Migration {
     {
         Schema::create('origins', static function (Blueprint $table) {
             $table->id();
+            $table->string('origin');
+            $table->string('description');
             $table->timestamps();
         });
     }
