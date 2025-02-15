@@ -23,7 +23,8 @@ class CreateModelAction extends ParentAction
     public function run(CreateModelRequest $request): Model
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'model',
+            'description'
         ]);
 
         return $this->createModelTask->run($data);

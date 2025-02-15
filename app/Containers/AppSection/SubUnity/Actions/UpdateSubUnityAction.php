@@ -25,7 +25,8 @@ class UpdateSubUnityAction extends ParentAction
     public function run(UpdateSubUnityRequest $request): SubUnity
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'sub_unity',
+            'description'
         ]);
 
         return $this->updateSubUnityTask->run($data, $request->id);

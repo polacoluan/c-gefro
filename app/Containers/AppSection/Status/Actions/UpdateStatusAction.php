@@ -25,7 +25,8 @@ class UpdateStatusAction extends ParentAction
     public function run(UpdateStatusRequest $request): Status
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'status',
+            'description'
         ]);
 
         return $this->updateStatusTask->run($data, $request->id);

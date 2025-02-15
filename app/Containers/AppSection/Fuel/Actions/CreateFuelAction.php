@@ -23,7 +23,8 @@ class CreateFuelAction extends ParentAction
     public function run(CreateFuelRequest $request): Fuel
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'fuel',
+            'description'
         ]);
 
         return $this->createFuelTask->run($data);

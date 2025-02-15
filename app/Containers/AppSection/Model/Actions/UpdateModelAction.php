@@ -25,7 +25,8 @@ class UpdateModelAction extends ParentAction
     public function run(UpdateModelRequest $request): Model
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'model',
+            'description'
         ]);
 
         return $this->updateModelTask->run($data, $request->id);

@@ -25,7 +25,8 @@ class UpdateMarkAction extends ParentAction
     public function run(UpdateMarkRequest $request): Mark
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'mark',
+            'description'
         ]);
 
         return $this->updateMarkTask->run($data, $request->id);

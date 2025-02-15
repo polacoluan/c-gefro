@@ -6,4 +6,8 @@ use App\Ship\Parents\Models\Model as ParentModel;
 
 class Type extends ParentModel
 {
+    protected $fillable = [
+        'type',
+        'description',
+    ];
 }

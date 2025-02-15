@@ -23,7 +23,8 @@ class CreateStatusAction extends ParentAction
     public function run(CreateStatusRequest $request): Status
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'status',
+            'description'
         ]);
 
         return $this->createStatusTask->run($data);

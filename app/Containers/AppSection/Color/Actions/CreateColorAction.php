@@ -23,7 +23,8 @@ class CreateColorAction extends ParentAction
     public function run(CreateColorRequest $request): Color
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'color',
+            'description'
         ]);
 
         return $this->createColorTask->run($data);

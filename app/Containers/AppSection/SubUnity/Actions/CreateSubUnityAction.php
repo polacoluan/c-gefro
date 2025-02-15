@@ -23,7 +23,8 @@ class CreateSubUnityAction extends ParentAction
     public function run(CreateSubUnityRequest $request): SubUnity
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'sub_unity',
+            'description'
         ]);
 
         return $this->createSubUnityTask->run($data);

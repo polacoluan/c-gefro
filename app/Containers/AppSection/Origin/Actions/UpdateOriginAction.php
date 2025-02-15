@@ -25,7 +25,8 @@ class UpdateOriginAction extends ParentAction
     public function run(UpdateOriginRequest $request): Origin
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'origin',
+            'description'
         ]);
 
         return $this->updateOriginTask->run($data, $request->id);

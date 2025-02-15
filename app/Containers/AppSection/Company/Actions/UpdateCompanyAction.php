@@ -25,7 +25,8 @@ class UpdateCompanyAction extends ParentAction
     public function run(UpdateCompanyRequest $request): Company
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'company',
+            'description'
         ]);
 
         return $this->updateCompanyTask->run($data, $request->id);

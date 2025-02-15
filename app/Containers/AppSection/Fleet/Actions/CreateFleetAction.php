@@ -23,7 +23,8 @@ class CreateFleetAction extends ParentAction
     public function run(CreateFleetRequest $request): Fleet
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'fleet',
+            'description'
         ]);
 
         return $this->createFleetTask->run($data);

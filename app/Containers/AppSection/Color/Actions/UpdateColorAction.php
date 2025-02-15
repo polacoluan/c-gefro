@@ -25,7 +25,8 @@ class UpdateColorAction extends ParentAction
     public function run(UpdateColorRequest $request): Color
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'color',
+            'description'
         ]);
 
         return $this->updateColorTask->run($data, $request->id);

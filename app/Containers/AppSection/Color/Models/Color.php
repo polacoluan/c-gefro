@@ -6,4 +6,8 @@ use App\Ship\Parents\Models\Model as ParentModel;
 
 class Color extends ParentModel
 {
+    protected $fillable = [
+        'color',
+        'description',
+    ];
 }

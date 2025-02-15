@@ -25,7 +25,8 @@ class UpdateFleetAction extends ParentAction
     public function run(UpdateFleetRequest $request): Fleet
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'fleet',
+            'description'
         ]);
 
         return $this->updateFleetTask->run($data, $request->id);

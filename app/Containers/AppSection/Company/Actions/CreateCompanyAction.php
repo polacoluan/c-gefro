@@ -23,7 +23,8 @@ class CreateCompanyAction extends ParentAction
     public function run(CreateCompanyRequest $request): Company
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'company',
+            'description'
         ]);
 
         return $this->createCompanyTask->run($data);

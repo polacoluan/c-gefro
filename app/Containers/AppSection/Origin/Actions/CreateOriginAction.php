@@ -23,7 +23,8 @@ class CreateOriginAction extends ParentAction
     public function run(CreateOriginRequest $request): Origin
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'origin',
+            'description'
         ]);
 
         return $this->createOriginTask->run($data);

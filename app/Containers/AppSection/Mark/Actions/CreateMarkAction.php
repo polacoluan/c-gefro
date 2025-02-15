@@ -23,7 +23,8 @@ class CreateMarkAction extends ParentAction
     public function run(CreateMarkRequest $request): Mark
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'mark',
+            'description'
         ]);
 
         return $this->createMarkTask->run($data);
