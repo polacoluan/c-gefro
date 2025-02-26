@@ -16,6 +16,7 @@ class Vehicle extends ParentModel
         'year',
         'color_id',
         'company_id',
+        'capacity',
         'fleet_id',
         'fuel_id',
         'mark_id',

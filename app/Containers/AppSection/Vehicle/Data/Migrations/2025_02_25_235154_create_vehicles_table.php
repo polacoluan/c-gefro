@@ -16,6 +16,7 @@ return new class () extends Migration {
             $table->string('engine_number');
             $table->string('renavam');
             $table->string('year');
+            $table->string('capacity');
             $table->foreignId('color_id')->constrained('colors');
             $table->foreignId('company_id')->constrained('companies');
             $table->foreignId('fleet_id')->constrained('fleets');

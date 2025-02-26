@@ -30,6 +30,7 @@ class CreateVehicleAction extends ParentAction
             'engine_number',
             'renavam',
             'year',
+            'capacity',
             'color_id',
             'company_id',
             'fleet_id',
