@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Company\UI\API\Controllers\ListCompaniesController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('company', ListCompaniesController::class)
+Route::get('companies', ListCompaniesController::class)
     ->middleware(['auth:api']);
 

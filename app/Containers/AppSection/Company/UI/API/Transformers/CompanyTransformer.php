@@ -16,6 +16,8 @@ class CompanyTransformer extends ParentTransformer
         return [
             'object' => $company->getResourceKey(),
             'id' => $company->getHashedKey(),
+            'company' => $company->company,
+            'description' => $company->description,
             'created_at' => $company->created_at,
             'updated_at' => $company->updated_at,
             'readable_created_at' => $company->created_at->diffForHumans(),

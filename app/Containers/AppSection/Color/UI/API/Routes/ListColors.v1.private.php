@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Color\UI\API\Controllers\ListColorsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('color', ListColorsController::class)
+Route::get('colors', ListColorsController::class)
     ->middleware(['auth:api']);
 

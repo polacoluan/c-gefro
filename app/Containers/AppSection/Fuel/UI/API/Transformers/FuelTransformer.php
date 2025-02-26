@@ -16,6 +16,8 @@ class FuelTransformer extends ParentTransformer
         return [
             'object' => $fuel->getResourceKey(),
             'id' => $fuel->getHashedKey(),
+            'fuel' => $fuel->fuel,
+            'description' => $fuel->description,
             'created_at' => $fuel->created_at,
             'updated_at' => $fuel->updated_at,
             'readable_created_at' => $fuel->created_at->diffForHumans(),

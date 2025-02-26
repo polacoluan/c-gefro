@@ -16,6 +16,8 @@ class MarkTransformer extends ParentTransformer
         return [
             'object' => $mark->getResourceKey(),
             'id' => $mark->getHashedKey(),
+            'mark' => $mark->mark,
+            'description' => $mark->description,
             'created_at' => $mark->created_at,
             'updated_at' => $mark->updated_at,
             'readable_created_at' => $mark->created_at->diffForHumans(),

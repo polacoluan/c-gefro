@@ -16,6 +16,8 @@ class OriginTransformer extends ParentTransformer
         return [
             'object' => $origin->getResourceKey(),
             'id' => $origin->getHashedKey(),
+            'origin' => $origin->origin,
+            'description' => $origin->description,
             'created_at' => $origin->created_at,
             'updated_at' => $origin->updated_at,
             'readable_created_at' => $origin->created_at->diffForHumans(),

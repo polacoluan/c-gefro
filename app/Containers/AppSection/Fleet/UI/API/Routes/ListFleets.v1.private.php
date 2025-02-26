@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Fleet\UI\API\Controllers\ListFleetsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('fleet', ListFleetsController::class)
+Route::get('fleets', ListFleetsController::class)
     ->middleware(['auth:api']);
 

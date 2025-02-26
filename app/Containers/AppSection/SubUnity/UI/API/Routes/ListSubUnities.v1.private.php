@@ -25,6 +25,6 @@
 use App\Containers\AppSection\SubUnity\UI\API\Controllers\ListSubUnitiesController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('sub-unity', ListSubUnitiesController::class)
+Route::get('sub-unities', ListSubUnitiesController::class)
     ->middleware(['auth:api']);
 

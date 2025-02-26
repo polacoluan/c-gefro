@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Origin\UI\API\Controllers\ListOriginsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('origin', ListOriginsController::class)
+Route::get('origins', ListOriginsController::class)
     ->middleware(['auth:api']);
 

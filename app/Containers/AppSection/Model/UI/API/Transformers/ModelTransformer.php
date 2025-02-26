@@ -16,6 +16,8 @@ class ModelTransformer extends ParentTransformer
         return [
             'object' => $model->getResourceKey(),
             'id' => $model->getHashedKey(),
+            'model' => $model->model,
+            'description' => $model->description,
             'created_at' => $model->created_at,
             'updated_at' => $model->updated_at,
             'readable_created_at' => $model->created_at->diffForHumans(),

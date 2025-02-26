@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Mark\UI\API\Controllers\ListMarksController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('mark', ListMarksController::class)
+Route::get('marks', ListMarksController::class)
     ->middleware(['auth:api']);
 

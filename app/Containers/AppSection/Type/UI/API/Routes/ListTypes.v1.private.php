@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Type\UI\API\Controllers\ListTypesController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('type', ListTypesController::class)
+Route::get('types', ListTypesController::class)
     ->middleware(['auth:api']);
 

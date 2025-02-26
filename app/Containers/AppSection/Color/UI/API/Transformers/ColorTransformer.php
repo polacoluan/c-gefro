@@ -16,6 +16,8 @@ class ColorTransformer extends ParentTransformer
         return [
             'object' => $color->getResourceKey(),
             'id' => $color->getHashedKey(),
+            'color' => $color->color,
+            'description' => $color->description,
             'created_at' => $color->created_at,
             'updated_at' => $color->updated_at,
             'readable_created_at' => $color->created_at->diffForHumans(),

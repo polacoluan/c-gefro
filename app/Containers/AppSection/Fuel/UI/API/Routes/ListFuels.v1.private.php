@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Fuel\UI\API\Controllers\ListFuelsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('fuel', ListFuelsController::class)
+Route::get('fuels', ListFuelsController::class)
     ->middleware(['auth:api']);
 

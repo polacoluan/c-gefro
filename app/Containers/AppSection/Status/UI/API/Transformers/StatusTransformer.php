@@ -16,6 +16,8 @@ class StatusTransformer extends ParentTransformer
         return [
             'object' => $status->getResourceKey(),
             'id' => $status->getHashedKey(),
+            'status' => $status->status,
+            'description' => $status->description,
             'created_at' => $status->created_at,
             'updated_at' => $status->updated_at,
             'readable_created_at' => $status->created_at->diffForHumans(),

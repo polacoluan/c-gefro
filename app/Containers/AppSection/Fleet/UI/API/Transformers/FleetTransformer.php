@@ -16,6 +16,8 @@ class FleetTransformer extends ParentTransformer
         return [
             'object' => $fleet->getResourceKey(),
             'id' => $fleet->getHashedKey(),
+            'fleet' => $fleet->fleet,
+            'description' => $fleet->description,
             'created_at' => $fleet->created_at,
             'updated_at' => $fleet->updated_at,
             'readable_created_at' => $fleet->created_at->diffForHumans(),

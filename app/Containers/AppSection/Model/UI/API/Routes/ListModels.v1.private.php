@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Model\UI\API\Controllers\ListModelsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('model', ListModelsController::class)
+Route::get('models', ListModelsController::class)
     ->middleware(['auth:api']);
 

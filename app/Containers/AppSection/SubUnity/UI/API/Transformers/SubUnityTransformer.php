@@ -16,6 +16,8 @@ class SubUnityTransformer extends ParentTransformer
         return [
             'object' => $subunity->getResourceKey(),
             'id' => $subunity->getHashedKey(),
+            'sub_unity' => $subunity->sub_unity,
+            'description' => $subunity->description,
             'created_at' => $subunity->created_at,
             'updated_at' => $subunity->updated_at,
             'readable_created_at' => $subunity->created_at->diffForHumans(),
