@@ -22,9 +22,9 @@
  * }
  */
 
-use App\Containers\AppSection\Status\UI\API\Controllers\ListStatusesController;
+use App\Containers\AppSection\Status\UI\API\Controllers\ListStatusController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('status', ListStatusesController::class)
+Route::get('status', ListStatusController::class)
     ->middleware(['auth:api']);
 

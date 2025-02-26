@@ -3,15 +3,15 @@
 namespace App\Containers\AppSection\Status\Actions;
 
 use Apiato\Core\Exceptions\CoreInternalErrorException;
-use App\Containers\AppSection\Status\Tasks\ListStatusesTask;
-use App\Containers\AppSection\Status\UI\API\Requests\ListStatusesRequest;
+use App\Containers\AppSection\Status\Tasks\ListStatusTask;
+use App\Containers\AppSection\Status\UI\API\Requests\ListStatusRequest;
 use App\Ship\Parents\Actions\Action as ParentAction;
 use Prettus\Repository\Exceptions\RepositoryException;
 
-class ListStatusesAction extends ParentAction
+class ListStatusAction extends ParentAction
 {
     public function __construct(
-        private readonly ListStatusesTask $listStatusesTask,
+        private readonly ListStatusTask $listStatusTask,
     ) {
     }
 
@@ -19,8 +19,8 @@ class ListStatusesAction extends ParentAction
      * @throws CoreInternalErrorException
      * @throws RepositoryException
      */
-    public function run(ListStatusesRequest $request): mixed
+    public function run(ListStatusRequest $request): mixed
     {
-        return $this->listStatusesTask->run();
+        return $this->listStatusTask->run();
     }
 }

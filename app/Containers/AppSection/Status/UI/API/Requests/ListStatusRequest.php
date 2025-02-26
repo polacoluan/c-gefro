@@ -4,7 +4,7 @@ namespace App\Containers\AppSection\Status\UI\API\Requests;
 
 use App\Ship\Parents\Requests\Request as ParentRequest;
 
-class ListStatusesRequest extends ParentRequest
+class ListStatusRequest extends ParentRequest
 {
     protected array $access = [
         'permissions' => null,

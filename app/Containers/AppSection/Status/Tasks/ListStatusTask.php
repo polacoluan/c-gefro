@@ -7,7 +7,7 @@ use App\Containers\AppSection\Status\Data\Repositories\StatusRepository;
 use App\Ship\Parents\Tasks\Task as ParentTask;
 use Prettus\Repository\Exceptions\RepositoryException;
 
-class ListStatusesTask extends ParentTask
+class ListStatusTask extends ParentTask
 {
     public function __construct(
         private readonly StatusRepository $repository,
