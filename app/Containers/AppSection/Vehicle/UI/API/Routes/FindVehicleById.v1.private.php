@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Vehicle\UI\API\Controllers\FindVehicleByIdController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('vehicles/{id}', FindVehicleByIdController::class)
+Route::get('vehicle/{id}', FindVehicleByIdController::class)
     ->middleware(['auth:api']);
 

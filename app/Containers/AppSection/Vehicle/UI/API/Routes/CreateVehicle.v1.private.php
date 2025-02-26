@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Vehicle\UI\API\Controllers\CreateVehicleController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('vehicles', CreateVehicleController::class)
+Route::post('vehicle', CreateVehicleController::class)
     ->middleware(['auth:api']);
 

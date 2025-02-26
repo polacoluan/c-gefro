@@ -25,6 +25,6 @@
 use App\Containers\AppSection\Vehicle\UI\API\Controllers\DeleteVehicleController;
 use Illuminate\Support\Facades\Route;
 
-Route::delete('vehicles/{id}', DeleteVehicleController::class)
+Route::delete('vehicle/{id}', DeleteVehicleController::class)
     ->middleware(['auth:api']);
 
