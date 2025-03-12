@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Containers\AppSection\Vehicle\UI\API\Requests;
+namespace App\Containers\AppSection\Maintenance\UI\API\Requests;
 
 use App\Ship\Parents\Requests\Request as ParentRequest;
 
-class CreateVehicleRequest extends ParentRequest
+class ListMaintenancesRequest extends ParentRequest
 {
     protected array $access = [
         'permissions' => null,
@@ -12,16 +12,7 @@ class CreateVehicleRequest extends ParentRequest
     ];
 
     protected array $decode = [
-        'color_id',
-        'company_id',
-        'fleet_id',
-        'fuel_id',
-        'mark_id',
-        'model_id',
-        'origin_id',
-        'status_id',
-        'sub_unity_id',
-        'type_id',
+        // 'id',
     ];
 
     protected array $urlParameters = [

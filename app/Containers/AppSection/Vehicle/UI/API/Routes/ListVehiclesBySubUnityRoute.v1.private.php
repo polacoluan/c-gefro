@@ -4,7 +4,7 @@
  * @apiGroup           Vehicle
  * @apiName            Invoke
  *
- * @api                {PATCH} /v1/vehicles/:id Invoke
+ * @api                {GET} /v1/vehicles-by-sub-unity Invoke
  * @apiDescription     Endpoint description here...
  *
  * @apiVersion         1.0.0
@@ -22,9 +22,9 @@
  * }
  */
 
-use App\Containers\AppSection\Vehicle\UI\API\Controllers\UpdateVehicleController;
+use App\Containers\AppSection\Vehicle\UI\API\Controllers\ListVehiclesBySubUnityController;
 use Illuminate\Support\Facades\Route;
 
-Route::patch('vehicle/{id}', UpdateVehicleController::class)
+Route::get('vehicles-by-sub-unity', ListVehiclesBySubUnityController::class)
     ->middleware(['auth:api']);
 

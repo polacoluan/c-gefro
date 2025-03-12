@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @apiGroup           Vehicle
+ * @apiGroup           Maintenance
  * @apiName            Invoke
  *
- * @api                {PATCH} /v1/vehicles/:id Invoke
+ * @api                {GET} /v1/maintenances/:id Invoke
  * @apiDescription     Endpoint description here...
  *
  * @apiVersion         1.0.0
@@ -22,9 +22,9 @@
  * }
  */
 
-use App\Containers\AppSection\Vehicle\UI\API\Controllers\UpdateVehicleController;
+use App\Containers\AppSection\Maintenance\UI\API\Controllers\FindMaintenanceByIdController;
 use Illuminate\Support\Facades\Route;
 
-Route::patch('vehicle/{id}', UpdateVehicleController::class)
+Route::get('maintenance/{id}', FindMaintenanceByIdController::class)
     ->middleware(['auth:api']);
 
